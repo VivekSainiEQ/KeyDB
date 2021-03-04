@@ -164,7 +164,6 @@ aeEventLoop *aeGetCurrentEventLoop();
 int aeResizeSetSize(aeEventLoop *eventLoop, int setsize);
 void aeSetDontWait(aeEventLoop *eventLoop, int noWait);
 
-void setAeLockSetThreadSpinWorker(spin_worker worker);
 void aeAcquireLock();
 int aeTryAcquireLock(int fWeak);
 void aeReleaseLock();
